@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="theme-color" content="#0b0b0b"><title>3B — Blonde Breakbeat Baik</title>
+<style>
+:root{--bg:#0b0b0b;--panel:#141414;--line:#303030;--text:#f7f7f7;--muted:#aaa}
+*{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;background:var(--bg);color:var(--text);font-family:Arial,Helvetica,sans-serif;line-height:1.5}
+.wrap{width:min(1120px,calc(100% - 40px));margin:auto}a{color:inherit;text-decoration:none}
+header{position:sticky;top:0;z-index:5;background:rgba(11,11,11,.95);border-bottom:1px solid #242424;backdrop-filter:blur(12px)}
+.nav{min-height:82px;display:flex;align-items:center;justify-content:space-between;gap:20px}.brand{display:flex;flex-direction:column;line-height:1}.brand strong{font-size:40px;font-weight:900;letter-spacing:-3px}.brand span{margin-top:7px;font-size:10px;letter-spacing:3px;color:#c9c9c9}
+nav{display:flex;gap:28px}nav a{font-size:12px;font-weight:700;letter-spacing:1.5px;color:#d1d1d1}
+.hero{min-height:510px;display:flex;align-items:center;position:relative;overflow:hidden;border-bottom:1px solid #202020;background:radial-gradient(ellipse at 78% 45%,#303030 0,#161616 22%,transparent 48%),linear-gradient(110deg,#0b0b0b,#0b0b0b 48%,#171717)}
+.hero:after{content:"3B";position:absolute;right:-20px;bottom:-125px;font-size:clamp(260px,45vw,570px);font-weight:900;letter-spacing:-35px;color:rgba(255,255,255,.035);pointer-events:none}
+.hero-content{position:relative;z-index:1;padding:78px 0;max-width:700px}.eyebrow,.section-label{color:#aaa;font-size:11px;font-weight:700;letter-spacing:5px}
+h1{margin:22px 0 14px;font-size:clamp(48px,10vw,112px);line-height:.88;letter-spacing:-5px;font-weight:900}h1 span{display:block}.sub{margin:25px 0 28px;color:#b8b8b8;font-size:12px;letter-spacing:5px}
+.button{display:inline-flex;align-items:center;gap:13px;padding:14px 23px;border-radius:999px;background:#fff;color:#111;font-size:12px;font-weight:800;letter-spacing:1.5px}
+section{padding:76px 0}.section-title{margin:8px 0 24px;font-size:clamp(26px,5vw,42px);line-height:1.05;letter-spacing:-1.5px}
+.player{background:linear-gradient(145deg,#171717,#0f0f0f);border:1px solid #303030;border-radius:18px;padding:28px;box-shadow:0 18px 55px #0004}
+.track-top{display:flex;align-items:center;justify-content:space-between;gap:15px}.track-title{font-size:21px;font-weight:800}.track-meta{color:var(--muted);font-size:12px;letter-spacing:2px;margin-top:3px}
+.play-row{display:flex;align-items:center;gap:22px;margin-top:24px}.play{width:58px;height:58px;flex:0 0 58px;border:0;border-radius:50%;background:white;color:#111;font-size:20px;cursor:pointer}
+.wave{height:52px;flex:1;display:flex;align-items:center;justify-content:space-between;gap:3px;overflow:hidden}.wave i{display:block;width:3px;min-width:2px;border-radius:5px;background:#dedede}
+audio{width:100%;margin-top:22px;height:38px}.hint{color:#999;font-size:12px;margin:12px 0 0}
+.playlist{margin-top:24px;border-top:1px solid #303030;padding-top:20px}.playlist-heading{display:flex;justify-content:space-between;align-items:center;margin-bottom:12px}.playlist-heading strong{font-size:13px;letter-spacing:2px}.playlist-heading span{color:#999;font-size:11px}
+.track-list{display:grid;gap:9px}.track{width:100%;display:flex;align-items:center;gap:13px;text-align:left;padding:13px 14px;border:1px solid #333;border-radius:12px;background:#101010;color:#eee;cursor:pointer}.track.active{border-color:#eee;background:#202020}
+.track-number{color:#999;font-size:12px;width:20px}.track-info{min-width:0;flex:1}.track-name{display:block;font-size:13px;font-weight:700;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}.track-detail{display:block;color:#999;font-size:10px;letter-spacing:1px;margin-top:2px}.track-action{color:#bbb;font-size:12px}
+.about-grid{display:grid;grid-template-columns:1fr 1fr;gap:35px;align-items:center}.about-mark{min-height:260px;display:flex;align-items:center;justify-content:center;border:1px solid #303030;border-radius:16px;background:radial-gradient(circle,#292929,#111 65%);font-size:clamp(60px,12vw,130px);font-weight:900;letter-spacing:-8px}.about-copy{color:#bdbdbd;max-width:480px}
+.socials{display:flex;flex-wrap:wrap;gap:12px;margin-top:22px}.socials a{border:1px solid #454545;border-radius:999px;padding:9px 14px;font-size:11px;letter-spacing:1px}footer{border-top:1px solid #282828;padding:22px 0;color:#888;font-size:11px;letter-spacing:1px}
+@media(max-width:600px){.wrap{width:calc(100% - 30px)}.nav{min-height:72px}.brand strong{font-size:34px}.brand span{font-size:8px;letter-spacing:2px}nav{gap:13px}nav a{font-size:10px;letter-spacing:.8px}.hero{min-height:465px}.hero-content{padding:65px 0}h1{letter-spacing:-3px}.sub{letter-spacing:3px;font-size:10px}section{padding:55px 0}.player{padding:20px}.about-grid{grid-template-columns:1fr}.about-mark{min-height:190px}}
+</style>
+</head>
+<body>
+<header><div class="wrap nav"><a class="brand" href="#home"><strong>3B</strong><span>BLONDE BREAKBEAT BAIK</span></a><nav><a href="#home">HOME</a><a href="#music">MUSIC</a><a href="#about">ABOUT</a></nav></div></header>
+<main>
+<section class="hero" id="home"><div class="wrap hero-content"><div class="eyebrow">BLONDE BREAKBEAT BAIK</div><h1><span>FEEL THE</span><span>BEAT.</span></h1><div class="sub">BREAKBEAT&nbsp; • &nbsp;DJ&nbsp; • &nbsp;MUSIC</div><a class="button" href="#music">LISTEN NOW →</a></div></section>
+<section id="music"><div class="wrap"><div class="section-label">FEATURED MUSIC</div><h2 class="section-title">LATEST MIX</h2>
+<div class="player"><div class="track-top"><div><div class="track-title" id="currentTitle">DJ MANA DIRIMU YANG DAHULU</div><div class="track-meta" id="currentMeta">DJ SET • 2026</div></div><div class="section-label">3B / 001</div></div>
+<div class="play-row"><button class="play" type="button" id="playButton" aria-label="Putar atau jeda">▶</button><div class="wave" id="wave" aria-hidden="true"></div></div>
+<audio id="audio" controls preload="metadata"><source src="musik.mp3" type="audio/mpeg">Browser kamu tidak mendukung pemutar audio.</audio>
+<div class="playlist"><div class="playlist-heading"><strong>PLAYLIST 3B</strong><span>1 TRACK</span></div><div class="track-list" id="trackList">
+<button class="track active" type="button" data-src="musik.mp3" data-title="DJ Mana Dirimu Yang Dahulu" data-meta="DJ SET • 2026"><span class="track-number">01</span><span class="track-info"><span class="track-name">DJ Mana Dirimu Yang Dahulu</span><span class="track-detail">BREAKBEAT MIX</span></span><span class="track-action">PLAY ▶</span></button>
+</div><p class="hint">Untuk menambah lagu, unggah file MP3 ke repositori dan tambahkan tombol lagu di daftar playlist.</p></div></div></div></section>
+<section id="about"><div class="wrap about-grid"><div><div class="section-label">ABOUT 3B</div><h2 class="section-title">BLONDE<br>BREAKBEAT<br>BAIK</h2><p class="about-copy">Welcome to my music world. Nikmati pilihan musik dan DJ mix dari 3B.</p><div class="socials"><a href="#about">INSTAGRAM</a><a href="#about">TIKTOK</a><a href="#about">YOUTUBE</a></div></div><div class="about-mark">3B</div></div></section>
+</main><footer><div class="wrap">© 2026 3B BLONDE BREAKBEAT BAIK</div></footer>
+<script>
+const audio=document.getElementById('audio'),playButton=document.getElementById('playButton'),wave=document.getElementById('wave'),title=document.getElementById('currentTitle'),meta=document.getElementById('currentMeta'),list=document.getElementById('trackList');
+[12,20,29,17,35,46,25,39,18,31,48,26,16,38,22,44,30,19,36,49,27,15,33,42,23,37,18,29,46,21,34,13,39,25,48,30,17,36,22,43,28,16,34,47,24,38,19,31,44,26,15,35,21,40,29,18,46,32,23,37,14,42,27,34].forEach(h=>{const b=document.createElement('i');b.style.height=h+'px';wave.appendChild(b)});
+list.addEventListener('click',async e=>{const b=e.target.closest('.track');if(!b)return;const source=audio.querySelector('source'),same=source.getAttribute('src')===b.dataset.src;if(same&&!audio.paused){audio.pause();return}if(!same){audio.pause();source.setAttribute('src',b.dataset.src);audio.load();title.textContent=b.dataset.title;meta.textContent=b.dataset.meta||'DJ SET • 2026';list.querySelectorAll('.track').forEach(x=>x.classList.toggle('active',x===b))}try{await audio.play()}catch(err){alert('File lagu belum ditemukan. Periksa nama file dan lokasinya di GitHub.')}});
+playButton.addEventListener('click',async()=>{if(audio.paused){try{await audio.play()}catch(err){alert('File musik.mp3 belum ditemukan.')}}else audio.pause()});
+audio.addEventListener('play',()=>playButton.textContent='Ⅱ');audio.addEventListener('pause',()=>playButton.textContent='▶');audio.addEventListener('ended',()=>playButton.textContent='▶');
+</script></body></html>
