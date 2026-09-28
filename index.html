@@ -1,0 +1,133 @@
+
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport"
+        content="width=device-width, initial-scale=1.0">
+  <title>3B - Blonde Breakbeat Baik</title>
+  <style>
+    * {
+      box-sizing: border-box;
+    }
+
+    body {
+      margin: 0;
+      background: #101010;
+      color: white;
+      font-family: Arial, sans-serif;
+      text-align: center;
+    }
+
+    header {
+      padding: 24px;
+      border-bottom: 1px solid #333;
+    }
+
+    header h2 {
+      margin: 0;
+      font-size: 30px;
+    }
+
+    nav {
+      margin-top: 18px;
+    }
+
+    nav a {
+      color: white;
+      text-decoration: none;
+      margin: 0 10px;
+      font-size: 13px;
+    }
+
+    .hero {
+      padding: 100px 20px 80px;
+    }
+
+    .hero p {
+      color: #aaa;
+      letter-spacing: 4px;
+    }
+
+    .hero h1 {
+      font-size: 48px;
+      margin: 15px 0;
+    }
+
+    .hero button {
+      padding: 14px 28px;
+      border: none;
+      border-radius: 30px;
+      font-weight: bold;
+      cursor: pointer;
+    }
+
+    .music {
+      margin: 0 auto 60px;
+      padding: 25px;
+      max-width: 400px;
+      background: #222;
+      border-radius: 15px;
+    }
+
+    .music button {
+      background: white;
+      border: none;
+      border-radius: 25px;
+      padding: 12px 25px;
+      cursor: pointer;
+    }
+
+    footer {
+      padding: 20px;
+      color: #888;
+      border-top: 1px solid #333;
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h2>3B.</h2>
+    <nav>
+      <a href="#home">HOME</a>
+      <a href="#music">MUSIC</a>
+      <a href="#about">ABOUT</a>
+    </nav>
+  </header>
+
+  <section class="hero" id="home">
+    <p>BLONDE BREAKBEAT BAIK</p>
+    <h1>FEEL THE BEAT.</h1>
+    <p>BREAKBEAT • DJ • MUSIC</p>
+    <button onclick="document
+      .getElementById('music').scrollIntoView()">
+      LISTEN NOW
+    </button>
+  </section>
+
+  <section class="music" id="music">
+    <h2>MY LATEST MIX</h2>
+    <p>3B BREAKBEAT MIX</p>
+    <p>DJ Set • 2026</p>
+    <audio id="player" controls style="width:100%">
+      <source src="musik.mp3" type="audio/mpeg">
+      Browser tidak mendukung audio.
+    </audio>
+    <p style="color:#aaa;font-size:12px">
+      Musik akan tersedia setelah file ditambahkan.
+    </p>
+  </section>
+
+  <section id="about" style="padding:30px">
+    <h2>ABOUT 3B</h2>
+    <p>Blonde Breakbeat Baik</p>
+    <p>Welcome to my music world.</p>
+  </section>
+
+  <footer>
+    © 2026 3B Blonde Breakbeat Baik
+  </footer>
+
+</body>
+  </html>
